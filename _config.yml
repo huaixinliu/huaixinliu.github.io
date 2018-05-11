@@ -140,13 +140,17 @@ theme: Anisina
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# deploy:
+#   type: ftpsync
+#   host: byu4358730001.my3w.com            #主机地址
+#   user: byu4358730001            #用户名
+#   pass: Lhx456123        #密码
+#   remote: /htdocs/blog/        #上传到空间的指定目录。比如/public_html/。默认为/
+#   port: 21            #端口，默认为21
 deploy:
-  type: ftpsync
-  host: byu4358730001.my3w.com            #主机地址
-  user: byu4358730001            #用户名
-  pass: Lhx456123        #密码
-  remote: /htdocs/blog/        #上传到空间的指定目录。比如/public_html/。默认为/
-  port: 21            #端口，默认为21
+  type: git
+  repo: https://github.com/huaixinliu/huaixinliu.github.io.git
+  branch: gh-page
 
 # img CDN path
 cdn-url:  # 你的CDN地址
